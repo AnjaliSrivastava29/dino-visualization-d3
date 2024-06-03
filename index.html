@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Homework #4: Innovative Visualization Design</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v3.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Homework #4: Innovative Visualization Design</h1>
+        <h3 class="text-center">Anjali Srivastava - asriva86@asu.edu </h3>
+    </div>
+    <div class="container-fluid">
+        <hr>
+        <div class="row">
+            <div class="col-lg-12 col-xl-12">
+                <div class="card body">
+                    <div class="card-header">
+                        <h4 class="text-center">
+                            The Mesozoic Era
+                        </h4>
+                    </div>
+                    <p>
+                    This visualization represents a subset of dinosaurs in the Mesozoic era as they were found through the different periods spread across the world map for a Dinosaur museum exhibit. <br>
+
+                    Marks: Points or Dino icons  <br>
+                    Channels: X and Y coordinates of different countries where dinosaurs were found.
+                    The different images for dinosaur icons are also channels.
+                    Size of the icons also represent the corresponding length of dinosaurs scaled relatively. <br>
+
+                    Interactions: On hovering over a dinosaur icon, we get a zoomed view of the corresponding dinosaur type with
+                    detailed information about them displayed on a tooltip. <br>
+
+                    On changing the selected period, the dinosaurs that existed in that particular period are displayed across the world map.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="button-container col-lg-2 col-xl-2" style="padding: 130px 40px 40px 40px;">
+                <button class="btn btn-outline-success period m-2" id="Late Triassic" value="Late Triassic"
+                    onclick="keepActive(this.id)">Late Triassic</button>
+                <button class="btn btn-outline-success period active m-2" id="Early Jurassic" value="Early Jurassic"
+                    onclick="keepActive(this.id)">Early Jurassic</button>
+                <button class="btn btn-outline-success period m-2" id="Mid Jurassic" value="Mid Jurassic"
+                    onclick="keepActive(this.id)">Mid Jurassic</button>
+                <button class="btn btn-outline-success period m-2" id="Late Jurassic" value="Late Jurassic"
+                    onclick="keepActive(this.id)">Late Jurassic</button>
+                <button class="btn btn-outline-success period m-2" id="Early Cretaceous" value="Early Cretaceous"
+                    onclick="keepActive(this.id)">Early Cretaceous</button>
+                <button class="btn btn-outline-success period m-2" id="Late Cretaceous" value="Late Cretaceous"
+                    onclick="keepActive(this.id)">Late Cretaceous</button>
+            </div>
+            <div class="col-lg-10 col-xl-10" id="my_dataviz" style="display: inline;"></div>
+        </div>
+    </div>
+
+</body>
+<script src="js/main.js"></script>
+
+</html>

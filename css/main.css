@@ -1,0 +1,35 @@
+*, .tooltip {
+    font-family: verdana, sans-serif;
+}
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .period {
+    display: block;
+    width: 180px;
+  }
+
+  .active {
+        background-color: #4CAF50;
+        color: white;
+  }
+
+  #my_dataviz {
+    background-color: #40c5e382;
+  }
+
+p {
+  font-family: verdana;
+}
+
+h4 {
+  font-family: verdana;
+}
