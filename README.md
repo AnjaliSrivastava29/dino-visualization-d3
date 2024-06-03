@@ -24,4 +24,5 @@ This will start a local development server, and you can access the visualization
 
 ## Technologies Used
 D3.js: A JavaScript library for creating dynamic, interactive data visualizations in the web browser.
+
 Bootstrap: A popular CSS framework for building responsive and mobile-first websites.
